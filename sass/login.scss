@@ -1,0 +1,232 @@
+@import './Normalize';
+@import 'nav-login';
+@import './footer-login';
+
+.o_u{
+  width: 48%;
+  display: inline-block;
+}
+body{
+  position: relative;
+}
+.bg-con{
+  height: 100%;
+  background-image:url(../img/login_bg.webp);
+  background-size: cover;
+  background-position: center 0;
+}
+.main{
+  width: 100%;
+  height: 800px;
+  .wrapper{
+    padding-top: 160px;
+    min-height: 690px;
+  }
+}
+.info{
+  width: 54%;
+  padding-top: 45px;
+  padding-right: 40px;
+  display: inline-block;
+  position: relative;
+  top: -128px;
+  .line{
+    width: 60px;
+    display: inline-block;
+    border-bottom: 8px solid #fff;
+  }
+  div{
+    margin-top: 58px;
+    line-height: 60px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 800;
+  }
+}
+.form_con{
+  width: 42%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-right: 90px;
+  position: relative;
+  border-radius: 4px;
+  .form{
+    max-width: 420px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    .top{
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      color: #111;
+      font-weight: 800;
+      font-size: 24px;
+    }
+    .fromLogin{
+      width: 100%;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+  }
+}
+.tab_top{
+  margin-bottom: 20px;
+  li{
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #111;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    cursor: pointer;
+    span{
+      font-size: 18px;
+      color: $color;
+    }    
+  }
+}
+.quickLogin{
+  .input-box{
+    width: 100%;
+    position: relative;
+    >span{
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: 1px solid #eee;
+      margin-left: 0;
+      margin-bottom: 16px;
+      margin-top: 0;
+      display: inline-block;
+      transition: all .2s;
+      >input{
+        color: #eee;
+        margin-left: 0;
+        width: 100%;
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 11px 0;     
+        outline: none;
+        border: none;  
+      }
+      .focus{
+        color: #111;
+      }     
+    }
+    label{
+      position: absolute;
+      left: 0;
+      top: 11px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  }
+  .button{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background-color: $color;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 24px;
+  }
+  .rule-content{
+    display: inline-block;
+    width: 370px;
+    text-align: left;
+    color: #7d7d7d;
+    margin-bottom: 16px;
+    .checkbox.error{
+      background-image: url(../img/login_checkbox_error.png);
+    }
+    .checkbox.curr{
+      background-image: url(../img/reg_agreeChecked.webp);
+    }
+    .checkbox{
+      display: inline-block;
+      padding-left: 20px;
+      height: 20px;
+      line-height: 20px;
+      background: url(../img/reg_agreeCheck.webp) no-repeat;
+      background-size: 20px 20px;
+      cursor: pointer;
+    }
+    .rule.error{
+      .ruleTitle{
+        color: #d30000;
+      }
+      a{
+        color: #d30000;
+        border-bottom: 1px solid #d30000;
+      }
+    }
+    .rule{
+      display: inline-block;
+      .ruleTitle{
+        font-size: 14px;
+        padding-left: 6px;
+      }
+      a{
+        font-size: 12px;
+        border-bottom: 1px solid #7d7d7d;
+        color:  #7d7d7d;
+        padding-bottom: 1px;
+      }
+    }  
+  }
+}
+.other{
+  width: 100%;
+  margin-top: 33px;
+  padding-bottom: 20px;
+  text-align: center;
+  li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    a{
+      font-size: 40px;
+    }
+    .icon-weixin2{
+      color: #d9f2cb;
+      &:hover{
+        color: #94cb77;
+      }
+    }
+    .icon-xinlangweibox{
+      color: #ffe2c2;
+      &:hover{
+        color: #eba355;
+      }
+    }
+    .icon-wangyihao{
+      color: #f5c2ce;
+      &:hover{
+        color:#f6859f;
+      }
+    }
+    .icon-renrenwang{
+      color: #cbdeee;
+      &:hover{
+        color: #6cabe0;
+      }
+    }
+  }
+}
+
+.err{
+  font-size: 14px;
+  color: #d30000;
+  margin: 10px 0 11px;
+  line-height: 24px;
+  display: none;
+}
