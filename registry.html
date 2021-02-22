@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/haier.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/registry.css">
+  <link rel="stylesheet" href="./css/iconfont-reg.css">
+  <title>账号注册-海尔官网</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="wrapper">
+      <div class="nav-left">
+        <a href="./index1.html">
+          <img src="https://image.haier.com/cn/images/haier2020_logo.png" alt="">
+        </a>
+        <span>注册账号</span>
+      </div>
+      <div class="nav-right">
+        我已注册，
+        <a href="./login.html">直接登录</a>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-title">一个账号便利享受Haier所有服务</div>
+    <div class="form-list">
+      <form action="http://10.31.165.55/haier/php/reg.php" method="post">
+      <div class="form-item">
+        <span class="input-title">手机号码</span>
+        <span class="input">
+          <input type="text" id="ph-pl" onkeyup="value=this.value.replace(/[^\d\.]/g,'')" class="input-style" name="phone">
+          <label for="ph-pl">购买，安装，报修，手机注册更方便</label>
+        </span>
+        <div class="errMsg">手机号好像不对哦</div>
+      </div>
+      <div class="form-item">
+        <span class="input-title">用户名</span>
+        <span class="input">
+          <input type="text" id="user-pl" class="input-style" name="username">
+          <label for="user-pl">请输入您的用户名</label>
+        </span>
+        <div class="errMsg">用户名已注册，请切换</div>
+      </div>
+      <div class="form-item">
+        <span class="input-title">密码</span>
+        <span class="input">
+          <input type="password" id="pw-pl" class="input-style" maxlength="16" name="password">
+          <label for="pw-pl">6-16位，数字，字母或符号组合</label>
+          <!-- 密码可见按钮 -->
+          <div class="showPw"><i class="iconfont icon-mimabukejian"></i></div>
+          <!-- 密码中强弱 -->
+          <div class="mimabox" style="display: none;">
+            <ul class="qiangruo">
+              <li id="strong1" class="normal">弱</li>
+              <li id="strong2" class="normal">中</li>
+              <li id="strong3" class="normal">强</li>
+              <a><li class="a-float">密码安全指南</li></a>
+            </ul>
+            <div class="float" style="display: none;">
+              <div class="float-cont">
+                <p class="text">哪类密码容易丢失？</p>
+                <p>· 使用生日或者手机号</p>
+                <p>· 出现率极高的数字或者字母重复</p>
+                <p>· 7位数以下的数字分分钟被破解！</p>
+                <p class="text">保证密码安全，避免以上错误</p>
+              </div>
+            </div>
+          </div>
+        </span>
+        <div class="errMsg">密码太短啦，还不到6位呢</div>
+      </div>
+      <div class="form-item">
+        <span class="input-title">确定密码</span>
+        <span class="input">
+          <input type="password" id="pwt-pl" class="input-style" maxlength="16">
+          <label for="pwt-pl">6-16位，数字，字母或符号组合</label>
+          <div class="showPw"><i class="iconfont icon-mimabukejian"></i></div>
+        </span>
+        <div class="errMsg">两次输入密码不一致</div>
+      </div>
+      <div class="rule-content">
+        <span class="checkbox"></span>
+        <div class="rule">
+          <span class="ruleTitle">我同意</span>
+          <a href="#">《海尔注册用户服务条款》</a>
+          <a href="#">《法律声明及隐私权政策》</a>
+        </div>
+      </div>
+      <div class="form-item regBtn-box">
+        <input type="submit" class="registryBtn" value="注册" name="submit"></input>
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="wrapper">
+      <div class="fo-left">
+        <a href="#">关于海尔</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">公告声明</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">投资者关系</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">联系我们</a>
+      </div>
+      <div class="fo-right">
+        <a href="#">鲁ICP备09096283号-1</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <span>© 2000-2021 Haier.com. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script src="./script/registry_module.js" type="module"></script>
