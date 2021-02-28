@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  font-size: 10px;
+  background: #fff!important;
+  box-sizing: border-box;
+  position: relative;
+}
+a, b, div, i, img, span{
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  font-style: normal;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.cur{
+  border-bottom: 1px solid #005aaa !important;
+}
+.full{
+  color: #111 !important;
+}
+.redtext{
+  border-bottom: 1px solid #d30000 !important;
+}
+.o_g{
+  width: 100%;
+  box-sizing: border-box;
+}
+@mixin overflowM($number){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $number;
+  overflow: hidden;
+}
+@mixin overflow(){
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

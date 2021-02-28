@@ -1,0 +1,98 @@
+@import './Normalize';
+@import './header-index';
+@import './footer-index';
+.content_g{
+  width: 1230px;
+  margin: 0 auto;
+  min-height: 1000px;
+  position: relative;
+  .list{
+    margin: 0 207px 0 3px;
+    min-height: 655px;
+    padding-bottom: 80px;
+  }
+}
+ul{
+  margin-bottom: 30px;
+  li{
+    width: 24%;
+    display: inline-block;
+    .box{
+      margin: 0 12px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 12px;
+      padding: 25px 0 45px;
+      border: 1px solid #fff;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      .imgbox{
+        display: block;
+        position: relative;
+        margin:  0 auto 24px;
+        img{
+          width: 100%;
+        }
+      }
+      .textbox{
+        height: 56px;
+        margin-bottom: 5px;
+        .tit{
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 7px;
+          max-height: 2.4em;
+          overflow: hidden;
+          display: block;
+        }
+      }
+      .jiage{
+        color: #888;
+        line-height: 12px;
+        font-size: 12px;
+        margin-bottom: 18px;
+        b{
+          color: #005aaa;
+          font-size: 14px;
+          display: inline-block;
+          padding-left: 15px;
+          font-weight: 400;
+          vertical-align: top;
+          position: relative;
+          top: -1px;
+          &::before{
+            content: "¥";
+            position: absolute;
+            left: 7px;
+            bottom: 0px;
+            font-size: 14px;        
+          }          
+        }        
+      }
+      &:hover{
+        border: 1px solid #fafafa;
+        box-shadow: 0 8px 10px rgba(0,0,0,.1);        
+      }
+    }
+  }
+}
+.prolist{
+  margin-bottom: 30px;
+  ul{
+    li{
+      display: inline-block;
+      width: 98px;
+      height: 40px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 40px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+    }
+    li.down{
+      background-color: #005aaa;
+      color: #fff;
+    }
+  }
+}
